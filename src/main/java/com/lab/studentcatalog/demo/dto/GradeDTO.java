@@ -1,16 +1,14 @@
-package com.lab.studentcatalog.demo.model;
+package com.lab.studentcatalog.demo.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class StudentGrade {
-
-    private String studentName;
-    private int studentAge;
+@Data
+public class GradeDTO {
+    private Long gradeId;
     private Double grade;
-
+    private Long studentId;
 }

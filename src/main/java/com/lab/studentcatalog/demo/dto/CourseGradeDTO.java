@@ -1,4 +1,4 @@
-package com.lab.studentcatalog.demo.model;
+package com.lab.studentcatalog.demo.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -6,12 +6,10 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
-
-public class Catalog {
-
+@Data
+public class CourseGradeDTO {
     private String courseName;
-    private List<StudentGrade> studentGrades;
+    private List<GradeDTO> grades;
 }
